@@ -16,22 +16,7 @@ var gulp = require('gulp'),
     ftp = require('vinyl-ftp');
 
 
-/* BEGIN: deploy */
-gulp.task('deploy', function () {
-    let conn = ftp.create({
-            host: 'artlen0t.beget.tech',
-            user: 'artlen0t_lis',
-            password: 'p2iCIt*d2wlVF3&z',
-            parallel: 10
-        }),
-        globs = [
-            './build/**'//Путь к папке сгенерированной верстки
-        ],
-        remoteFolder = './finances';//Путь к папке на сервере от корня
 
-    return gulp.src(globs, {buffer: false}).pipe(conn.dest(remoteFolder));
-});
-/* END: deploy */
 
 
 const paths = {

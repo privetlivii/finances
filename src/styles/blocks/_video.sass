@@ -1,0 +1,105 @@
+.video
+  background: linear-gradient(to right, #303030 50%, #f7f9fd 50%)
+
+.video-container
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+.video-block
+  height: 650px
+
+.video-quality
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-template-rows: .62fr .4fr .7fr .95fr
+  grid-gap: 10px
+
+.video-block__item
+  height: 100%
+  width: 100%
+
+.video-title
+  @include GilroyExtrabold-44px
+  color: #252a37
+  display: grid
+  grid-column: 1/3
+  align-items: end
+  padding-left: 14%
+
+.video-subtitle
+  @include AsapMedium-16px
+  color: #626c84
+  line-height: 31px
+  grid-column: 1/3
+  padding-left: 14%
+
+.video-quality__icon
+  width: 50px
+  height: 50px
+
+.video-quality__item
+  color: #626c84
+  font-weight: 400
+  font-size: 16px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .video-quality__text
+    font-weight: 700
+    font-size: 30px
+    color: #252a37
+    padding-top: 3%
+
+@media (max-width: 1149px)
+  .video-title
+    font-size: 39px
+
+  .video-quality
+    padding-top: 15%
+    padding-bottom: 15%
+
+@media (max-width: 992px)
+  .video-title
+    font-size: 3.9vw
+
+  .video-quality
+    text-align: center
+    grid-template-rows: auto
+
+@media (max-width: 768px)
+  .video-container
+    grid-template-columns: 1fr
+
+  .video
+    background: linear-gradient(to right, #f7f9fd 50%, #f7f9fd 50%)
+
+  .video-title
+    font-size: 6vw
+    align-items: unset
+    padding-left: 0
+
+  .video-subtitle
+    font-size: 3vw
+    padding-left: 0
+    padding-bottom: 5%
+
+@media (max-width: 575px)
+  .video-title
+    font-size: 8vw
+
+  .video-subtitle
+    font-size: 3.5vw
+
+  .video-quality__item
+    font-size: 3.5vw
+
+  .video-quality__text
+    font-size: 6vw
+
+  .video-quality__icon
+    width: 9vw
+    height: 9vw
+
+  .video-block
+    height: 52vw

@@ -1,0 +1,274 @@
+.marketing-gallery__container
+  position: relative
+  margin-bottom: 100px
+
+
+.marketing-gallery
+  padding-top: 100px
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  width: 100%
+
+  &:focus
+    outline: none
+
+
+.marketing-gallery .slick-slide
+  display: block
+  padding-top: 80px
+
+  &:focus
+    outline: none
+
+
+.marketing-gallery__block
+  background-color: #f7f9fd
+  position: relative
+  padding-top: 70px
+  padding-right: 570px
+  padding-left: 60px
+  min-height: 465px
+  width: 100%
+
+  &:focus
+    outline: none
+
+
+.marketing-gallery__content
+  position: relative
+  padding-bottom: 50px
+
+
+.marketing-gallery__image
+  position: absolute
+  top: -79px
+  right: 72px
+
+
+.marketing-gallery__headline
+  font-weight: 300
+  font-size: 20px
+  color: #222222
+
+
+.marketing-gallery__title
+  @include GilroyExtrabold-44px
+  color: #252a37
+
+
+.marketing-gallery__text
+  @include AsapMedium-16px
+  color: #848b9e
+  padding-top: 16px
+  line-height: 28px
+
+
+.marketing-gallery__link
+  margin-top: 34px
+  transition: background-color .8s, color .8s
+
+  &:hover
+    background-color: #cf2175
+    color: #ffd04a
+
+  &:focus
+    outline: none
+
+.marketing-gallery__vertical-text
+  font-weight: 700
+  font-size: 40px
+  color: $primary-color
+  display: flex
+  align-items: center
+  transform: rotate(-90deg)
+  position: absolute
+  bottom: 205px
+  left: -275px
+
+  &::before
+    content: ''
+    width: 150px
+    height: 2px
+    background-color: $primary-color
+    display: block
+    margin-right: 20px
+
+
+.marketing-gallery__buttons
+  position: absolute
+  bottom: -30px
+  right: 87px
+
+
+.gallery__btn-prev, .gallery__btn-next
+  border: none
+  padding: 0
+  background-color: $primary-color
+
+  &:focus
+    outline: none
+
+
+  &:hover
+    background-color: #cf2175
+    transition: background-color .8s
+
+
+.gallery__btn-prev__icon, .gallery__btn-next__icon
+  width: 60px
+  height: 60px
+  padding: 22px 13px
+  transition: fill .3s
+  fill: #fff
+
+  &:hover
+    fill: #ffd04a
+
+
+.gallery__btn-prev
+  background-color: rgba(33, 84, 207, 0.5)
+
+
+@media (max-width: 1200px)
+  .marketing-gallery__container
+    width: 85%
+
+  .marketing-gallery__image
+    top: -6vw
+    right: 6vw
+    width: 35vw
+
+  .marketing-gallery__block
+    padding-top: 5vw
+    padding-right: 44vw
+    padding-left: 4vw
+    min-height: auto
+
+  .marketing-gallery__content
+    padding-bottom: 4vw
+
+  .marketing-gallery__title
+    font-size: 3vw
+
+  .marketing-gallery__headline
+    font-size: 2vw
+
+  .marketing-gallery__text
+    font-size: 1.4vw
+    padding-top: 1vw
+    line-height: 2.5vw
+
+  .marketing-gallery__vertical-text
+    font-size: 3vw
+    left: -22vw
+    bottom: 17vw
+
+    &::before
+      width: 14vw
+      margin-right: 1vw
+
+
+@media (max-width: 992px)
+  .marketing-gallery__image
+    right: 5vw
+    width: 25vw
+
+  .marketing-gallery__block
+    padding-right: 32vw
+
+  .marketing-gallery__link
+    margin-top: 3vw
+
+  .marketing-gallery__vertical-text
+    font-size: 2.5vw
+    left: -21vw
+
+    &::before
+      width: 12vw
+
+
+  .gallery__btn-next__icon, .gallery__btn-prev__icon
+    width: 6vw
+    height: 6vw
+    padding: 1vw
+
+  .marketing-gallery__buttons
+    bottom: -3vw
+    right: 7vw
+
+
+@media (max-width: 768px)
+  .marketing-gallery__vertical-text
+    font-size: 2.5vw
+    left: -18vw
+
+    &::before
+      width: 11vw
+
+  .marketing-gallery__block
+    .project-link
+      height: 8vw
+      width: 21vw
+      font-size: 2.5vw
+      border-radius: 4vw
+
+  .marketing-gallery__text
+    font-size: 2vw
+    line-height: 3.5vw
+
+  .marketing-gallery
+    padding-top: 8vw
+
+  .marketing-gallery .slick-slide
+    padding-top: 8vw
+
+
+@media (max-width: 575px)
+  .marketing-gallery__block
+    display: flex
+    flex-direction: column
+    padding-right: 4vw
+
+  .marketing-gallery__image
+    position: unset
+    order: -1
+    margin: 0 auto
+    width: 55vw
+
+  .marketing-gallery__text
+    font-size: 3vw
+    padding-top: 1vw
+    line-height: 5.5vw
+
+  .marketing-gallery__content
+    text-align: center
+    padding-top: 2vw
+
+  .marketing-gallery__title
+    font-size: 5.5vw
+
+  .marketing-gallery__headline
+    font-size: 4vw
+
+  .marketing-gallery__vertical-text
+    font-size: 4vw
+    left: -32vw
+    bottom: 39vw
+
+    &::before
+      width: 28vw
+
+
+@media (max-width: 480px)
+  .gallery__btn-next__icon, .gallery__btn-prev__icon
+    width: 7vw
+    padding: 1.5vw
+
+
+
+
+
+
+
+

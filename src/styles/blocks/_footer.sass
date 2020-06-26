@@ -1,0 +1,246 @@
+.footer
+  background-color: #0a1123
+  padding-top: 80px
+  padding-bottom: 60px
+
+.footer-container
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  column-gap: $gutter
+
+.footer
+
+  .logo-link
+    width: 265px
+    display: block
+    padding-top: 12%
+
+
+  .logo-slogan
+    padding-top: 7%
+    padding-bottom: 10%
+    @include AsapMedium-16px
+
+  .social-networking__link
+    background-color: #232939
+    border-radius: 50px
+    display: inline-block
+    width: 35px
+    height: 34px
+    margin-right: 8px
+    text-align: center
+    line-height: 30px
+    transition: background-color .5s ease
+
+    &:hover
+      background-color: $primary-color
+
+      .icons
+          fill: #ffd04a
+
+
+.logo__social
+  .icons
+    width: 14px
+    height: 14px
+
+.footer-nav
+
+  .nav-menu__toggle
+    display: none
+
+.footer-nav__title
+  @include GilroyExtrabold-24px
+  grid-column: 1/3
+  grid-row: 1/3
+
+
+.footer-nav__list
+  margin: 0
+  list-style: none
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-auto-flow: column
+  grid-template-rows: repeat(7,34px)
+  padding-top: 9%
+  padding-left: 0
+  color: #fff
+
+
+.footer-nav__item
+  position: relative
+  align-items: center
+  display: flex
+
+  &::before
+    content: ''
+    width: 6px
+    height: 1px
+    background-color: $primary-color
+    margin-right: 8%
+    display: block
+
+.footer-nav__link
+  color: #fff
+  font-weight: 500
+  font-size: 14px
+  &:hover
+    transition: font-size .5s, color .5s
+    color: $primary-color
+    font-size: 20px
+
+.subscribe__title-form
+  @include GilroyExtrabold-24px
+  padding-bottom: 10%
+
+.subscribe
+  padding-top: 9%
+
+.subscribe__appeal-text
+  padding-bottom: 9%
+  @include AsapMedium-16px
+
+.subscribe-form
+  position: relative
+
+.subscribe-field
+  border-radius: 30px
+  padding: 10px 75px 10px 40px
+  width: 100%
+  border: none
+
+  &:focus
+    outline: none
+
+  &::placeholder
+    font-weight: 400
+    font-style: italic
+
+.subscribe-button
+  position: absolute
+  top: 0
+  right: -2px
+  background-color: $primary-color
+  border: none
+  border-top-right-radius: 90px
+  border-bottom-right-radius: 90px
+  transition: background-color .5s ease
+  width: 55px
+  height: 44px
+  .icons
+    width: 15px
+    height: 15px
+
+  &:hover
+    background-color: #0a1123
+    .icons
+      fill: $orange
+      z-index: 1
+      width: 30px
+      height: 30px
+      transition: width .5s, height.5s ease-in-out
+
+  &:focus
+    outline: none
+
+@media (max-width: 992px)
+  .footer
+    .logo-link
+      width: 27vw
+
+    .social-networking__link
+      margin-right: 7px
+
+    .footer-container
+      column-gap: 30px
+
+@media (max-width: 768px)
+  .footer-container
+    grid-template-columns: repeat(2,1fr)
+
+  .logo-slogan
+    width: 61%
+
+  .subscribe
+    grid-column: 1/3
+    padding-top: 4vw
+
+  .subscribe__title-form
+    padding-bottom: 1vw
+
+  .subscribe__appeal-text
+    padding-bottom: 2vw
+
+  .footer
+    padding-top: 3vw
+    padding-bottom: 6vw
+
+    .logo-link
+      width: 35vw
+
+    //.logo-slogan
+    //  font-size: 2vw
+    //  width: 30vw
+
+  .footer-nav__title
+    font-size: 4vw
+
+  .footer-nav__list
+    padding-top: 5vw
+    grid-template-rows: repeat(7,4vw)
+
+@media (max-width: 575px)
+  .footer
+
+    .subscribe__appeal-text
+      font-size: 3vw
+
+    .logo-slogan
+      padding-bottom: 5%
+      font-size: 3vw
+
+    .logo-link
+      width: 67vw
+      padding-top: 5vw
+
+  .footer-container
+    overflow: hidden
+
+  .footer-nav
+    position: relative
+
+    .nav-menu__toggle
+      //display: block
+
+  .logo__social
+    grid-column: 1/3
+
+  .footer-nav__list
+    background-color: rgba(0,0,0,.2)
+    position: absolute
+    top: 0
+    width: 130px
+    will-change: transform
+    transition: transform .3s, opacity .3s
+    opacity: 0
+    transform: translateX(100%)
+
+    &.active
+      opacity: 1
+      transform: translateX(0)
+
+  .subscribe
+    padding-top: 10vw
+
+@media (max-width: 480px)
+
+  .logo-slogan
+    width: 80%
+
+  //.subscribe-field
+  //  padding: 1vw 13vw 1vw 8vw
+  //
+  //.subscribe-button
+  //  right: -1vw
+  //  width: 16vw
+  //  height: 9vw

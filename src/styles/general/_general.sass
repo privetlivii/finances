@@ -1,0 +1,99 @@
+@font-face
+  font-family: 'Asap'
+  src: url('../../fonts/Gilroy-Light.woff') format('woff')
+  font-weight: 300
+  font-style: normal
+
+@font-face
+  font-family: 'Asap'
+  src: url('../../fonts/Asap-Regular.woff') format('woff')
+  font-weight: 400
+  font-style: normal
+
+
+@font-face
+  font-family: 'Asap'
+  src: url('../../fonts/Asap-Italic.woff') format('woff')
+  font-weight: 400
+  font-style: italic
+
+
+@font-face
+  font-family: 'Asap'
+  src: url('../../fonts/Asap-Medium.woff') format('woff')
+  font-weight: 500
+  font-style: normal
+
+
+@font-face
+  font-family: 'Asap'
+  src: url('../../fonts/Gilroy-ExtraBold.woff') format('woff')
+  font-weight: 700
+  font-style: normal
+
+
+img
+  max-width: 100%
+
+h2
+  @include GilroyExtrabold-44px
+
+h3
+  @include GilroyExtrabold-24px
+
+body
+  font-family: 'Asap', Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif
+  color: #fff
+  font-weight: 400
+  background-color: #fff
+
+
+.container
+  max-width: 1150px
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  padding-left: $gutter
+  padding-right: $gutter
+
+
+.project-link
+  height: 55px
+  width: 180px
+  align-items: center
+  display: flex
+  justify-content: center
+  color: #fff
+  font-size: 16px
+  font-weight: 700
+  background-color: $primary-color
+  border-radius: 90px
+  transition: background-color .7s
+
+  &:focus
+    outline: none
+
+  &:hover
+    color: #ffd04a
+
+
+.icons
+  transition: fill .3s
+  fill: #fff
+
+  &:hover
+    fill: #ffd04a
+
+.hide-placeholder
+  @include hidePlaceholder
+    opacity: 1
+    font-size: 14px
+    line-height: 16px
+    transition: opacity .3s
+
+
+  &:focus
+    @include hidePlaceholder
+      opacity: 0
+      transition: opacity .3s
+

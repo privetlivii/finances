@@ -1,0 +1,404 @@
+.header
+  background-color: #444444
+  overflow: hidden
+
+
+.header-inner
+  overflow: hidden
+
+
+.header-requisites
+  display: flex
+  padding-top: 20px
+  padding-bottom: 20px
+
+
+.header-contacts
+  display: flex
+  padding-right: 30px
+  font-weight: 400
+  align-items: center
+
+  &:hover
+    color: #ffd04a
+    transition: color .3s
+
+    .icons, .header-contacts__link
+      fill: #ffd04a
+      color: #ffd04a
+
+
+.header-contacts .icons
+  width: 25px
+  height: 25px
+  margin-right: 10px
+
+
+.header-contacts__link
+  text-decoration: none
+  color: #fff
+  transition: color .3s
+  align-items: center
+  display: flex
+
+
+.social-networking
+  margin-left: auto
+
+
+.social-networking .icons
+  width: 30px
+  height: 17px
+
+
+.header-main
+  display: flex
+  background-color: #2c2c2c
+  height: 90px
+  align-items: center
+  justify-content: space-between
+  position: relative
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 99.99%
+    height: 100%
+    width: 100rem
+    background-color: #2c2c2c
+
+
+.logo
+  width: 205px
+  margin-left: 30px
+
+
+.nav-menu
+  height: inherit
+  display: flex
+  list-style: none
+  padding: 0
+  margin: 0
+
+
+.nav-menu__item
+  height: inherit
+  font-weight: 700
+  margin-right: 46px
+
+  &:last-child
+    margin-right: 0
+
+
+.nav-menu__link
+  font-size: 15px
+  color: #fffefe
+  height: inherit
+  display: flex
+  align-items: center
+  text-transform: uppercase
+  border-bottom: 3px solid transparent
+  transition: border-bottom-color .3s
+  padding-top: 3px
+
+  &:hover
+    border-bottom-color: $primary-color
+    color: #ffd04a
+
+
+.nav-menu__current .nav-menu__link
+  border-bottom: 3px solid $orange
+
+
+.language
+  width: 35px
+  font-weight: 700
+  margin-right: 15px
+  position: relative
+
+  &::after
+    content: ''
+    background-color: #fff
+    display: block
+    width: 10px
+    height: 10px
+    position: absolute
+    right: 0
+    top: 5px
+    clip-path: polygon(50% 100%, 0 34%, 100% 34%)
+
+
+.header-inner__panel
+  display: flex
+
+
+.search
+  position: relative
+
+  &.active
+    .search-run
+      .icons
+        opacity: 0
+
+
+      &::before,
+      &::after
+        opacity: 1
+
+
+    .search-input
+      transform: translateX(0)
+      opacity: 1
+      pointer-events: auto
+
+
+.search-run
+  position: relative
+
+  .icons
+    width: 20px
+    height: 20px
+    cursor: pointer
+    transition: fill .3s
+
+    &:hover
+      fill: #ef7f1a
+
+
+  &::before
+    box-shadow: none
+    top: 12px
+    left: 3px
+    transform: rotate(45deg)
+
+
+  &::after
+    top: 12px
+    left: 3px
+    transform: rotate(-45deg)
+
+
+  &::before,
+  &::after
+    width: 16px
+    height: 2px
+    position: absolute
+    background-color: #000
+    content: ''
+    opacity: 0
+
+
+.search-input
+  position: absolute
+  top: 100%
+  right: 0
+  will-change: transform
+  transition: transform .4s, opacity .4s
+  transform: translateY(-100%)
+  opacity: 0
+  pointer-events: none
+
+
+.search-field
+  background-color: #e8e7ee
+  border-radius: 20px
+  padding: 3px 30px 3px 10px
+  border: 1px solid #ef7f1a
+
+  &:focus
+    outline: none
+
+
+.search-button
+  padding: 0
+  border: none
+  background: none
+  position: absolute
+  top: 2px
+  right: 5px
+
+  .icons
+    width: 20px
+    height: 20px
+    background-color: #dd6b32
+    border-radius: 50px
+    padding: 3px
+
+
+@media (max-width: 1150px)
+  .nav-menu__item
+    margin-right: 25px
+
+    &:last-child
+      margin-right: 0
+
+
+@media (max-width: 991px)
+  .logo
+    width: 250px
+
+  .header-street
+    display: none
+
+  .header-contacts
+    font-size: 13px
+
+  .header-contacts .icons
+    width: 20px
+    height: 20px
+    margin-right: 5px
+
+  .social-networking .icons
+    width: 25px
+
+  .nav-menu
+    flex-direction: column
+    position: absolute
+    top: 65px
+    width: 130px
+    will-change: transform
+    transition: transform .3s, opacity .3s
+    opacity: 0
+    transform: translateX(100%)
+
+    &.active
+      opacity: 1
+      transform: translateX(0)
+      background-color: #2154cf
+
+
+  .nav-menu__item
+    margin: 5px auto
+
+    &:last-child
+      margin-right: auto
+
+
+  .nav
+    margin-left: auto
+    position: relative
+
+  .nav-menu__toggle
+    position: relative
+    margin-right: 15px
+    width: 40px
+    height: 40px
+    background-color: $primary-color
+
+    &::before,
+    &::after
+      content: ''
+      background-color: #fff
+      position: absolute
+      transition: transform .4s
+
+
+    &:before
+      box-shadow: 0 5px 0 #fff, 0 -5px 0 #fff
+      top: 19px
+      left: 11px
+      width: 19px
+      height: 2px
+
+
+  .nav-menu__toggle.active
+    &::before
+      box-shadow: none
+
+
+    &::after
+      top: 11px
+      left: 19px
+      width: 2px
+      height: 18px
+
+
+    &::before,
+    &::after
+      transform: rotate(45deg)
+
+
+@media (max-width: 767px)
+  .header-contacts .icons
+    width: 15px
+    height: 15px
+
+  .header-contacts
+    font-size: 11px
+    padding-right: 15px
+
+  .social-networking .icons
+    width: 20px
+    height: 14px
+
+
+@media (max-width: 575px)
+
+  .header-contacts:nth-child(3)
+    display: none
+
+
+@media (max-width: 480px)
+  .header-contacts
+    font-size: 15px
+
+  .header-contacts:nth-child(2)
+    display: none
+
+
+  .social-networking .icons
+    width: 25px
+
+  .logo
+    width: 100%
+    margin-right: 23%
+    margin-left: 10px
+
+  .nav
+    margin-left: 0
+
+  .header-main
+    flex-wrap: wrap
+    height: 135px
+
+  .search-inner
+    width: auto
+
+  .nav-menu__toggle
+    margin-left: 10px
+    margin-right: 10px
+    padding-top: 18px
+    padding-left: 10px
+
+    &::before
+      display: block
+
+
+  .nav-menu
+    width: 100vw
+    background-color: rgba(33, 84, 207, 0.9) !important
+    transform: translateX(-100%)
+
+  .nav-menu__item
+    margin: 1vw auto
+
+  .nav-menu__current .nav-menu__link
+    border-bottom-color: #444
+
+  .nav-menu__link
+    font-size: 3vw
+  .header-contacts
+    align-items: center
+
+    &::before
+      height: 4vw
+      width: 4vw
+      margin-right: 1vw
+      background-size: 3vw
+
+
+
+
+
+

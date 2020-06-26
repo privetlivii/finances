@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Finances</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#3754ca">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2e2e2e">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#2e2e2e">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-container">
+        <div class="header-requisites">
+            <div class="header-contacts">
+                <a href="tel:79268962695" alt="phone loading" title="call" class="header-contacts__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#phone-icon"></use>
+                    </svg>
+                    +7 (926) 896 26-95</a>
+            </div>
+            <div class="header-contacts">
+                <a href="mailto:query@finances.com" alt="mail loading" title="write to us"
+                   class="header-contacts__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#mail-icon"></use>
+                    </svg>
+                    query@finances.com</a>
+            </div>
+            <div class="header-contacts">
+                <svg class="icons" alt="address loading">
+                    <use xlink:href="img/spriteIcons.svg#local-icon"></use>
+                </svg>
+                1105 Roosevelt Street, CA 94903
+            </div>
+            <div class="social-networking">
+                <a href="https://ru-ru.facebook.com/" alt="icons loading" target="_blank" title="facebook"
+                   class="social-networking__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/" alt="icons loading" target="_blank" title="twitter"
+                   class="social-networking__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#twitter"></use>
+                    </svg>
+                </a>
+                <a href="https://plus.google.com/" alt="icons loading" target="_blank" title="googleplus"
+                   class="social-networking__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#google-plus"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" alt="icons loading" target="_blank" title="instagram"
+                   class="social-networking__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="logo">
+                <a href="#" alt="logo load" class="logo-link">
+                    <img src="img/logo.svg" alt="logo loading" title="logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="nav">
+                <div class="nav-menu__toggle"></div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-menu__item nav-menu__current"><a href="#" alt="link load" class="nav-menu__link">Home</a></li>
+                    <li class="nav-menu__item"><a href="#" alt="link load" class="nav-menu__link">About</a></li>
+                    <li class="nav-menu__item"><a href="#" alt="link load" class="nav-menu__link">Services</a></li>
+                    <li class="nav-menu__item"><a href="#" alt="link load" class="nav-menu__link">Projects</a></li>
+                    <li class="nav-menu__item"><a href="#" alt="link load" class="nav-menu__link">Pages</a></li>
+                    <li class="nav-menu__item"><a href="#" alt="link load" class="nav-menu__link">Blog</a></li>
+                    <li class="nav-menu__item"><a href="#" alt="link load" class="nav-menu__link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-inner__panel">
+                <div class="language">En</div>
+
+
+                <form class="search" id="search">
+                    <div class="search-run">
+                        <svg class="icons" alt="icons loading">
+                            <use xlink:href="img/spriteIcons.svg#search"></use>
+                        </svg>
+                    </div>
+
+                    <div class="search-input">
+                        <input type="search" title="введите запрос" class="search-field hide-placeholder"
+                               placeholder="Поиск...">
+                        <button type="submit" class="search-button">
+                            <svg class="icons" alt="icons loading">
+                                <use xlink:href="img/spriteIcons.svg#arrow-next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container main-container">
+        <div class="main-content">
+            <div class="main__slogan">Your future is created by</div>
+            <h1 class="main__title">What you do today</h1>
+            <div class="main__subtitle">Nobody’s more committed to connecting you with the exceptional
+                top talents with the right fit for your business than us.
+            </div>
+            <div class="main-links">
+                <a href="#" title="Our Service" class="project-link link__painted">Our Service</a>
+                <a href="#" title="Contact us" class="project-link link__empty">Contact us</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<section class="advantages">
+    <div class="advantages-block">
+        <svg class="advantages-icon">
+            <use xlink:href="img/spriteIcons.svg#consulting-icon"></use>
+        </svg>
+        <div class="advantages-block__title">
+            Best Consulting
+        </div>
+        <div class="advantages-block__subtitle">
+            Mutual funds pool money from many investors to purchase broad range of investments, such as stocks.
+        </div>
+    </div>
+    <div class="advantages-block">
+        <svg class="advantages-icon">
+            <use xlink:href="img/spriteIcons.svg#marketing-icon"></use>
+        </svg>
+        <div class="advantages-block__title">
+            Best Consulting
+        </div>
+        <div class="advantages-block__subtitle">
+            Mutual funds pool money from many investors to purchase broad range of investments, such as stocks.
+        </div>
+    </div>
+    <div class="advantages-block">
+        <svg class="advantages-icon">
+            <use xlink:href="img/spriteIcons.svg#time-icon"></use>
+        </svg>
+        <div class="advantages-block__title">
+            Best Consulting
+        </div>
+        <div class="advantages-block__subtitle">
+            Mutual funds pool money from many investors to purchase broad range of investments, such as stocks.
+        </div>
+    </div>
+</section>
+
+<main class="services">
+    <div class="container services-container">
+        <div class="caption">
+            <div class="caption-head">Our Services</div>
+            <div class="caption-text">What we do</div>
+        </div>
+        <div class="grid-inner">
+            <div class="services__block">
+                <a href="#" title="read" class="services__block-link__image">
+                    <img alt="image-load" class="services__block-image" src="img/financial-planning.jpg" alt="">
+                </a>
+                <p class="services__block-title">Financial Planning</p>
+                <p class="services__block-text">Mutual funds pool money from many investors to purchase broad range of
+                    investments, such as stocks.</p>
+                <a href="#" title="read" class="services__block-link__more">
+                    Read More
+                    <svg class="services-block__more-icon">
+                        <use xlink:href="img/spriteIcons.svg#arrow-next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="services__block">
+                <a href="#" title="read" class="services__block-link__image">
+                    <img alt="image-load" class="services__block-image" src="img/tax-planning.jpg" alt="">
+                </a>
+                <p class="services__block-title">Tax Planning</p>
+                <p class="services__block-text">Mutual funds pool money from many investors to purchase broad range of
+                    investments, such as stocks.</p>
+                <a href="#" title="read" class="services__block-link__more">
+                    Read More
+                    <svg class="services-block__more-icon">
+                        <use xlink:href="img/spriteIcons.svg#arrow-next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="services__block">
+                <a href="#" title="read" class="services__block-link__image">
+                    <img alt="image-load" class="services__block-image" src="img/savings-strategy.jpg" alt="">
+                </a>
+                <p class="services__block-title">Saving Strategy</p>
+                <p class="services__block-text">Mutual funds pool money from many investors to purchase broad range of
+                    investments, such as stocks.</p>
+                <a href="#" title="read" class="services__block-link__more">Read More
+                    <svg class="services-block__more-icon">
+                        <use xlink:href="img/spriteIcons.svg#arrow-next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="services__block">
+                <a href="#" title="read" class="services__block-link__image">
+                    <img alt="image-load" class="services__block-image" src="img/mutual-funds.jpg" alt="">
+                </a>
+                <p class="services__block-title">Mutual Funds</p>
+                <p class="services__block-text">Mutual funds pool money from many investors to purchase broad range of
+                    investments, such as stocks.</p>
+                <a href="#" title="read" class="services__block-link__more">Read More
+                    <svg class="services-block__more-icon">
+                        <use xlink:href="img/spriteIcons.svg#arrow-next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="services__block">
+                <a href="#" title="read" class="services__block-link__image">
+                    <img alt="image-load" class="services__block-image" src="img/business-loan.jpg" alt="">
+                </a>
+                <p class="services__block-title">Business Loan</p>
+                <p class="services__block-text">Mutual funds pool money from many investors to purchase broad range of
+                    investments, such as stocks.</p>
+                <a href="#" title="read" class="services__block-link__more">Read More
+                    <svg class="services-block__more-icon">
+                        <use xlink:href="img/spriteIcons.svg#arrow-next"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="services__block">
+                <a href="#" title="read" class="services__block-link__image">
+                    <img alt="image-load" class="services__block-image" src="img/insurance-consulting.jpg" alt="">
+                </a>
+                <p class="services__block-title">Insurance Consulting</p>
+                <p class="services__block-text">Mutual funds pool money from many investors to purchase broad range of
+                    investments, such as stocks.</p>
+                <a href="#" title="read" class="services__block-link__more">Read More
+                    <svg class="services-block__more-icon">
+                        <use xlink:href="img/spriteIcons.svg#arrow-next"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="video">
+    <div class="container video-container">
+        <div class="video-block">
+            <iframe class="video-block__item" width="1519" height="554" src="https://www.youtube.com/embed/YyaVya4YSwU"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="video-quality">
+
+
+            <div class="video-title">25 years of experience</div>
+            <div class="video-subtitle">It’s an approach that brings together the best of financial planning
+                and
+                the best of investment management.
+            </div>
+
+            <div class="video-quality__item">
+                <svg class="video-quality__icon">
+                    <use xlink:href="img/spriteIcons.svg#ico-07"></use>
+                </svg>
+                <span class="video-quality__text">85%</span>
+                Business Growth
+            </div>
+            <div class="video-quality__item">
+                <svg class="video-quality__icon">
+                    <use xlink:href="img/spriteIcons.svg#ico-08"></use>
+                </svg>
+                <span class="video-quality__text">500</span>
+                Successful Investment
+            </div>
+            <div class="video-quality__item">
+                <svg class="video-quality__icon">
+                    <use xlink:href="img/spriteIcons.svg#ico-09"></use>
+                </svg>
+                <span class="video-quality__text">4000</span>
+                Cases completed
+            </div>
+            <div class="video-quality__item">
+                <svg class="video-quality__icon">
+                    <use xlink:href="img/spriteIcons.svg#ico-10"></use>
+                </svg>
+                <span class="video-quality__text">150</span>
+                Running Projects
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="container marketing-gallery__container">
+    <div class="marketing-gallery init__slick" data-slick='{
+        "slidesToScroll": 1,
+        "slidesToShow": 1,
+        "prevArrow": ".gallery__btn-prev",
+        "nextArrow": ".gallery__btn-next",
+        "infinite": true,
+        "speed": 500,
+
+         "responsive": [
+        {
+          "breakpoint": 1140,
+          "settings": {
+
+          }
+        }
+      ]}'>
+
+        <div>
+            <div class="marketing-gallery__block">
+                <div class="marketing-gallery__content">
+                    <div class="marketing-gallery__headline">Marketing Growth</div>
+                    <div class="marketing-gallery__title">Modern Woodman Ltd.</div>
+                    <div class="marketing-gallery__text">A business strategy is the means by which it sets out to
+                        achieve its
+                        desired ends. You have ideas, goals, and dreams. We have a culturally diverse, forward thinking
+                        team
+                        looking for talent like you and make your dream come true.
+                    </div>
+                    <a href="#" title="View More" alt="link load" class="project-link marketing-gallery__link">View More</a>
+
+                </div>
+                <div class="marketing-gallery__image"><img src="img/gallery-image1.jpg" alt=""></div>
+            </div>
+        </div>
+        <div>
+            <div class="marketing-gallery__block">
+                <div class="marketing-gallery__content">
+                    <div class="marketing-gallery__headline">Marketing Growth</div>
+                    <div class="marketing-gallery__title">Modern Woodman Ltd.</div>
+                    <div class="marketing-gallery__text">A business strategy is the means by which it sets out to
+                        achieve its
+                        desired ends. You have ideas, goals, and dreams. We have a culturally diverse, forward thinking
+                        team
+                        looking for talent like you and make your dream come true.
+                    </div>
+                    <a href="#" class="project-link marketing-gallery__link">View More</a>
+                </div>
+                <div class="marketing-gallery__image"><img src="img/gallery-image1.jpg" alt=""></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="marketing-gallery__vertical-text">Featured Cases</div>
+    <div class="marketing-gallery__buttons">
+        <button type="submit" title="previous-slide" class="gallery__btn-prev">
+            <svg class="gallery__btn-prev__icon">
+                <use xlink:href="img/spriteIcons.svg#arrow-prev"></use>
+            </svg>
+        </button>
+        <button type="submit" title="next-slide" class="gallery__btn-next">
+            <svg class="gallery__btn-next__icon">
+                <use xlink:href="img/spriteIcons.svg#arrow-next"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="logo__social">
+            <a href="#" class="logo-link">
+                <img src="img/logo.svg" alt="logo loading" title="logo" class="logo-image">
+            </a>
+            <div class="logo-slogan">We guarantee you the prospect of growth, our company is developing rapidly</div>
+            <div class="social-networking">
+                <a href="https://ru-ru.facebook.com/" alt="icons loading" target="_blank" title="facebook"
+                   class="social-networking__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/" alt="icons loading" target="_blank" title="twitter"
+                   class="social-networking__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#twitter"></use>
+                    </svg>
+                </a>
+                <a href="https://plus.google.com/" alt="icons loading" target="_blank" title="googleplus"
+                   class="social-networking__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#google-plus"></use>
+                    </svg>
+                </a>
+                <a href="https://dostup-linkedin.com/" alt="icons loading" target="_blank" title="linkedIn"
+                   class="social-networking__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#linkedin"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" alt="icons loading" target="_blank" title="instagram"
+                   class="social-networking__link">
+                    <svg class="icons">
+                        <use xlink:href="img/spriteIcons.svg#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <nav class="footer-nav">
+            <div class="nav-menu__toggle"></div>
+            <ul class="footer-nav__list">
+                <li class="footer-nav__title">Useful Links</li>
+                <li class="footer-nav__item"><a href="#" title="about" class="footer-nav__link">About us</a></li>
+                <li class="footer-nav__item"><a href="#" title="services" class="footer-nav__link">Our Services</a></li>
+                <li class="footer-nav__item"><a href="#" title="project" class="footer-nav__link">Project</a></li>
+                <li class="footer-nav__item"><a href="#" title="team" class="footer-nav__link">Our Team</a></li>
+                <li class="footer-nav__item"><a href="#" title="career" class="footer-nav__link">Career</a></li>
+                <li class="footer-nav__item"><a href="#" title="contact" class="footer-nav__link">Contact us</a></li>
+                <li class="footer-nav__item"><a href="#" title="blog" class="footer-nav__link">Our Blog</a></li>
+                <li class="footer-nav__item"><a href="#" title="testimonials" class="footer-nav__link">Testimonials</a>
+                </li>
+                <li class="footer-nav__item"><a href="#" title="gallery" class="footer-nav__link">Gallery</a></li>
+                <li class="footer-nav__item"><a href="#" title="faq" class="footer-nav__link">Faq</a></li>
+            </ul>
+        </nav>
+        <form class="subscribe" id="subscribe">
+            <div class="subscribe__title-form">Subscribe</div>
+            <div class="subscribe__appeal-text">Don’t miss to subscribe to our new feeds, kindly fill the form below.
+            </div>
+            <div class="subscribe-form">
+                <input type="email" title="укажите Email" id="email" class="subscribe-field hide-placeholder" placeholder="Email Address" required>
+                <button type="submit" class="subscribe-button" name="отправка">
+                    <svg class="icons" alt="icons loading">
+                        <use xlink:href="img/spriteIcons.svg#send"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+</footer>
+
+<!-- Begin Scripts -->
+<script src="js/script.js"></script>
+<!-- End Scripts -->
+</body>
+</html>

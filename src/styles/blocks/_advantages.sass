@@ -1,0 +1,87 @@
+.advantages
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+
+
+.advantages-block
+  align-items: center
+  display: flex
+  flex-direction: column
+  text-align: center
+  padding-top: 66px
+  padding-bottom: 50px
+
+  &:nth-child(1)
+    background-color: $primary-color
+
+
+  &:nth-child(2)
+    background-color: #1e3367
+
+
+  &:nth-child(3)
+    background-color: #2e2e2e
+
+
+.advantages-block__title
+  font-weight: 700
+  font-size: 30px
+  padding-top: 28px
+  padding-bottom: 20px
+
+
+.advantages-block__subtitle
+  @include AsapMedium-16px
+  width: 69%
+  line-height: 1.7
+
+
+.advantages-icon
+  width: 70px
+  height: 70px
+  display: block
+  fill: #fff
+
+
+@media (max-width: 992px)
+  .advantages-block
+    padding-top: 7vw
+    padding-bottom: 7vw
+
+  .advantages-icon
+    width: 8vw
+    height: 6vw
+
+  .advantages-block__title
+    font-size: 3.5vw
+    padding-top: 3vw
+    padding-bottom: 3vw
+
+  .advantages-block__subtitle
+    font-size: 1.5vw
+
+
+@media (max-width: 768px)
+  .advantages
+    grid-template-columns: 1fr
+
+  .advantages-block__subtitle
+    font-size: 2.5vw
+
+  .advantages-block__title
+    font-size: 6.5vw
+
+  .advantages-icon
+    width: 11vw
+    height: 11vw
+
+
+@media (max-width: 575px)
+
+  .advantages-icon
+    width: 13vw
+
+  .advantages-block__title
+    font-size: 7vw
+    padding-top: 4vw
+    padding-bottom: 4vw

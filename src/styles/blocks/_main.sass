@@ -1,0 +1,112 @@
+.main-container
+  height: 750px
+  display: flex
+
+.main-content
+  margin: auto 0
+
+.main__slogan
+  font-weight: 300
+  font-size: 36px
+
+.main__title
+  font-weight: 700
+  font-size: 100px
+  line-height: 112px
+
+.main__subtitle
+  font-weight: 400
+  font-size: 20px
+  padding-top: 25px
+  padding-bottom: 53px
+  width: 70%
+
+.main-links
+  display: flex
+
+.link__painted
+  margin-right: 35px
+
+  &:hover
+    background-color: unset
+    border: 1px solid #fff
+
+
+.link__empty
+
+  background-color: unset
+  border: 1px solid #fff
+
+  &:hover
+    background-color: #cf2175
+    border: none
+
+
+@media (max-width: 991px)
+  .main-content
+    margin: auto
+    width: 500px
+
+  .main__slogan
+    font-size: 30px
+
+  .main__title
+    font-size: 55px
+
+  .main__subtitle
+    font-size: 14px
+    padding-top: 0
+    width: 90%
+
+  .main-container
+    height: 500px
+
+
+@media (max-width: 767px)
+  .main-content
+    width: 450px
+
+  .main__slogan
+    font-size: 22px
+
+  .main__title
+    font-size: 50px
+    line-height: 80px
+
+  .main__subtitle
+    font-size: 13px
+    padding-bottom: 25px
+
+  .main-container
+    height: 400px
+
+
+@media (max-width: 480px)
+  .main__slogan
+    font-size: 5vw
+
+  .main__title
+    font-size: 10vw
+    line-height: 14vw
+
+  .main__subtitle
+    font-size: 2.5vw
+    padding-bottom: 4vw
+    width: 80%
+
+  .link__painted
+    margin-right: 6vw
+
+  .project-link
+    height: 10vw
+    width: 30vw
+    font-size: 3vw
+    border-radius: 10vw
+
+  .main-container
+    height: 70vw
+
+
+  .header-menu__item-link
+    font-size: 4vw
+    padding-top: 0

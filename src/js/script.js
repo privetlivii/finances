@@ -2,9 +2,7 @@
 //= lib/slick.min.js
 
 $(document).ready(function () {
-    $('.init__slick').slick({
-
-    });
+    $('.init__slick').slick({});
 
 });
 
@@ -37,15 +35,10 @@ window.addEventListener("DOMContentLoaded", function () {
     });
     /* END: Menu toggle */
 
-    // let search = document.querySelector('.search');
-    // const searchOpen = function () {
-    //     search.classList.toggle('active');
-    // };
-
-
-
-
-
+    /*let search = document.querySelector('.search');
+    const searchOpen = function () {
+        search.classList.toggle('active');
+    };*/
 
 
 });

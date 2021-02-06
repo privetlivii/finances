@@ -1,43 +1,58 @@
 {
-  "name": "borodin",
-  "version": "2.0.0",
-  "description": "For works",
+  "name": "finances",
+  "version": "1.0.0",
+  "description": "",
   "main": "gulpfile.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/privetlivii"
+    "url": "git+https://github.com/privetlivii/finances.git"
   },
-  "keywords": [
-    "project",
-    "work"
-  ],
-  "author": "alex lenk",
-  "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^9.7.6",
-    "browser-sync": "^2.26.7",
-    "gulp-ex-file-include": "^2.0.2",
-    "gulp-notify": "^3.2.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-svgmin": "^2.2.0",
-    "path": "^0.12.7",
-    "vinyl-ftp": "^0.6.1"
+    "gulp-html-beautify": "latest",
+    "uglifyjs-webpack-plugin": "latest",
+    "babel-loader": "latest"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-rigger": "^0.5.8",
-    "gulp-sass": "^4.0.2",
-    "gulp-svgstore": "^7.0.1",
-    "gulp-uglify-es": "^2.0.0",
-    "node-sass": "^4.13.1"
-  }
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "latest",
+    "gulp-concat": "latest",
+    "gulp-csso": "latest",
+    "gulp-dart-sass": "latest",
+    "gulp-ex-file-include": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-mode": "latest",
+    "gulp-rename": "latest",
+    "gulp-rigger": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-svgmin": "latest",
+    "gulp-svgstore": "latest",
+    "gulp-terser": "latest",
+    "gulp-uglify-es": "latest",
+    "gulp-webp": "latest",
+    "imagemin-jpeg-recompress": "latest",
+    "imagemin-mozjpeg": "latest",
+    "imagemin-pngquant": "latest",
+    "imagemin-webp": "latest",
+    "imagemin-zopfli": "latest",
+    "node-sass": "latest",
+    "path": "latest",
+    "svg-sprite": "latest",
+    "vinyl-ftp": "latest",
+    "webpack-stream": "latest"
+  },
+  "author": "Borodin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/privetlivii/finances/issues"
+  },
+  "homepage": "https://github.com/privetlivii/finances#readme"
 }
